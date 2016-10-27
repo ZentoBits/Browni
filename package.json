@@ -1,0 +1,28 @@
+{
+  "name": "browni",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZentoBits/Browni.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZentoBits/Browni/issues"
+  },
+  "homepage": "https://github.com/ZentoBits/Browni#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "body-parser": "^1.15.2",
+    "connect-redis": "^3.1.0",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "jquery": "^3.1.1",
+    "mongoose": "^4.6.5"
+  }
+}
