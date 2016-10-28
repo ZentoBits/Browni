@@ -2,7 +2,7 @@
   "name": "browni",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/ZentoBits/Browni#readme",
   "dependencies": {
-    "angular": "^1.5.8",
     "body-parser": "^1.15.2",
     "connect-redis": "^3.1.0",
     "express": "^4.14.0",

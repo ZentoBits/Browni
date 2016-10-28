@@ -1,0 +1,21 @@
+{
+  "name": "browni",
+  "description": "",
+  "main": "./server/server.js",
+  "authors": [
+    "Zachary George <zacharygeorge@Zacharys-MacBook-Pro.local>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ZentoBits/Browni",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}
