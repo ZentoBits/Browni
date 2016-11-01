@@ -1,7 +1,7 @@
 'use strict'
 
 ////// Requires //////
-const bodyParser = require('body-parser')
+const { json } = require('body-parser')
 const express = require('express')
 const session = require('express-session')
 const RedisStore = require('connect-redis')(session)
@@ -17,7 +17,15 @@ app.set('PORT', PORT)
 
 ////// Middleware //////
 app.use(express.static('client'))
-app.use(bodyParser.urlencoded({extended: false}))
+
+app.use(session({
+    store: new RedisStore({
+      url: process.env.REDIS_URL || 'redis://localhost:6379'
+    }),
+    secret: 'spongeBox'
+}))
+// app.use(bodyParser.urlencoded({extended: false}))
+app.use(json())
 
 app.use(routes)
 

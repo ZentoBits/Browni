@@ -7,4 +7,12 @@ const app = angular.module('brownii', ['ngRoute'])
         controller: 'LoginCtrl',
         templateUrl: 'partials/main.html'
       })
+      .when('/register', {
+        controller: 'RegisterCtrl',
+        templateUrl: 'partials/register.html'
+      })
+      .when('/profile', {
+        controller: 'ProfileCtrl',
+        templateUrl: 'partials/profile.html'
+      })
   })

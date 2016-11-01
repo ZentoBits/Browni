@@ -1,12 +1,11 @@
-<h1>Brownii</h1>
-<h3>Login</h4>
+<h1>Register here</h1>
 
-<form ng-submit="loginUser()">
+<form ng-submit="registerUser()">
+  <label for="household">Household</label>
+  <input id="household" type="text" name="household" value="" class="form-control" ng-model="household">
   <label for="email">Email</label>
   <input id="email" type="text" name="email" placeholder="john.doe@gmail.com" class="form-control" ng-model="email">
   <label for="password">Password</label>
   <input id="password" type="password" name="password" placeholder="********" class="form-control" ng-model="password">
-  <input type="submit" value="LOGIN" class="btn btn-success btn-lg">
+  <input type="submit" value="REGISTER" class="btn btn-info btn-lg">
 </form>
-
-<a href="#/register"><button type="button" class="btn btn-info">REGISTER</button></a>
