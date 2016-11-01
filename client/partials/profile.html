@@ -1,0 +1,28 @@
+<h1>Household Profile</h1>
+
+<h3 id="userGreeting"></h3>
+
+<span>Add Child</span><span id="plusButton" data-toggle="modal" data-target="#myModal">+</span>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title" id="modalTitle">Children</h4>
+        </div>
+        <div class="modal-body">
+          <form ng-submit="registerChild()">
+            <label for="name">Name</label>
+            <input id="childName" type="text" name="name" value="" class="form-control" ng-model="name">
+            <label for="username">Username</label>
+            <input id="childUsername" type="text" name="username" value="" class="form-control" ng-model="username">
+            <label for="password">Password</label>
+            <input id="childPassword" type="text" name="password" value="" class="form-control" ng-model="password">
+            <input id="childButton" type="submit" value="REGISTER" class="btn btn-success btn-lg"">
+            <input type="button" value="CLOSE" class="btn btn-default" data-dismiss="modal">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

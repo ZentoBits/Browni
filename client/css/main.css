@@ -1,0 +1,39 @@
+#plusButton {
+  margin-left: 10px;
+  height: 10px;
+  width: 10px;
+  padding: 5px 10px 6px 10px;
+  background: #36d079;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  cursor: cell;
+  user-select: none;
+}
+
+body {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+}
+
+#plusButton:hover {
+  background: #3dea88;
+}
+
+#plusButton:active {
+  background: #2fba6c;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+#modalTitle {
+  text-align: center;
+}
+
+#childButton {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  outline: none;
+}

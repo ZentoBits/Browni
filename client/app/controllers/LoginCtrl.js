@@ -1,3 +1,13 @@
-app.controller('LoginCtrl', function ($scope, $location, $route) {
-  console.log('Cheers!')
+app.controller('LoginCtrl', function ($scope, $location, $route, $http) {
+
+  $scope.loginUser = () => {
+    const user = {
+      email: $scope.email,
+      password: $scope.password
+    }
+
+    $http
+    .post('/api/', user)
+    .then($location.path('/profile'))
+  }
 })
