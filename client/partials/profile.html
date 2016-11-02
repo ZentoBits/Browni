@@ -1,31 +1,33 @@
+
 <h1>Household Profile</h1>
 
 <h3 id="userGreeting"></h3>
 
 <span>Add Child</span><span id="plusButton" ng-click="addChild = !addChild">+</span>
 
-<form ng-submit="registerChild()" ng-show="addChild" class="slideIn">
-  <label for="name">Name</label>
-  <input id="childName" type="text" name="name" value="" class="form-control" ng-model="name">
-  <label for="username">Username</label>
-  <input id="childUsername" type="text" name="username" value="" class="form-control" ng-model="username">
-  <label for="password">Password</label>
-  <input id="childPassword" type="text" name="password" value="" class="form-control" ng-model="password">
-  <input id="childButton" type="submit" value="REGISTER" class="btn btn-success btn-lg">
-</form>
+<div class="registerInfo">
+  <form ng-submit="registerChild()" ng-show="addChild" class="slideIn">
+    <label for="name">Name</label>
+    <input id="childName" type="text" name="name" value="" class="form-control" ng-model="name">
+    <label for="username">Username</label>
+    <input id="childUsername" type="text" name="username" value="" class="form-control" ng-model="username">
+    <label for="password">Password</label>
+    <input id="childPassword" type="text" name="password" value="" class="form-control" ng-model="password">
+    <input id="childButton" type="submit" value="REGISTER" class="btn btn-success btn-lg">
+  </form>
+  <div class="registerSideBar"></div>
+</div>
 
-<div class="registerInfo"></div>
-
-<div class="childBlock" ng-repeat="obj in children">
+<div class="childBlock">
+  <div class="childName" ng-repeat="obj in children">
     {{obj.name}}
+  </div>
 </div>
 
-</div>
-
-<footer>
+<footer class="footer">
   <ul>
-    <li>Profile</li>
-    <li>Tasks</li>
-    <li>Rewards</li>
+    <a href="#/profile"><li>Profile</li></a>
+    <a href="#/tasks"><li>Tasks</li></a>
+    <a href="#/rewards"><li>Rewards</li></a>
   </ul>
 </footer>
