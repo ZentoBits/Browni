@@ -15,4 +15,12 @@ const app = angular.module('brownii', ['ngRoute', 'ngAnimate'])
         controller: 'ProfileCtrl',
         templateUrl: 'partials/profile.html'
       })
+      .when('/tasks', {
+        controller: 'TasksCtrl',
+        templateUrl: 'partials/tasks.html'
+      })
+      .when('/rewards', {
+        controller: 'RewardsCtrl',
+        templateUrl: 'partials/rewards.html'
+      })
   })
