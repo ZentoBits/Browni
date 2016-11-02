@@ -37,3 +37,23 @@ body {
   margin-top: 15px;
   outline: none;
 }
+
+.ng-hide {
+  display:none!important;
+}
+
+.slideIn {
+  position: relative;
+  transition: 0.3s linear all;
+  top: 15px;
+  opacity: 1;
+}
+
+.slideIn.ng-hide {
+  top: 0px;
+  opacity: 0;
+}
+
+.slideIn.ng-hide-add, .slideIn.ng-hide-remove {
+  display: block!important;
+}

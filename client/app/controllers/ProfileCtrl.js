@@ -1,7 +1,7 @@
 app.controller('ProfileCtrl', function ($scope, $location, $route, $http) {
   $http.get('/api/user')
   .then( user => {
-    console.log(user)
+    console.log('user' ,user)
     $scope.user = user.data
     document.getElementById('userGreeting').innerHTML = $scope.user.household
   })
@@ -15,7 +15,7 @@ app.controller('ProfileCtrl', function ($scope, $location, $route, $http) {
   $scope.registerChild = () => {
     const child = {
       name: $scope.name,
-      email: $scope.email,
+      username: $scope.username,
       password: $scope.password,
       household: $scope.user.household
     }
@@ -27,4 +27,9 @@ app.controller('ProfileCtrl', function ($scope, $location, $route, $http) {
       console.log('child', child)
     })
   }
+  $http.get('/api/user')
+  .then( user => {
+    $scope.children = user.data.children
+    console.log('children', $scope.children)
+    })
 })

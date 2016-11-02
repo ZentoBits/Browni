@@ -1,6 +1,6 @@
 'use strict'
 
-const app = angular.module('brownii', ['ngRoute'])
+const app = angular.module('brownii', ['ngRoute', 'ngAnimate'])
   .config(($routeProvider) => {
     $routeProvider
       .when('/', {
