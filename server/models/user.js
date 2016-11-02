@@ -20,5 +20,5 @@ module.exports = mongoose.model("User", {
       type: String,
       required: true
     },
-    "children" : { type: [String] }
+    "children" : { type: [] }
 })
